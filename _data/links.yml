@@ -1,7 +1,5 @@
 buttons:
-  - name: Website
-    url: ../
-  - name: Website
+  - name: My Website
     url: ../
 socials:
   twitter: https://twitter.com/LikkanChung
