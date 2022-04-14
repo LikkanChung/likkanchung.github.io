@@ -1,0 +1,25 @@
+---
+layout: links
+title: Likkan Chung
+links: 
+  - name: Twitter
+    url: https://twitter.com/LikkanChung
+---
+
+<div class="profile-image mt-5 mb-5"><img src="/assets/img/profile.jpg" alt=""></div>
+<h1 class="text-center mt-3 mb-3">{{page.title}}</h1>
+<h2 class="text-center mt-3 mb-5">@LikkanChung</h2>
+
+{% for link in site.data.links.buttons %}
+    <div class="m-5">
+        <a role="button" class="btn btn-lg btn-light col p-3 m-2" href="{{ link.url }}">{{ link.name }}</a>
+    </div>
+{% endfor %}
+
+<div class="m-2">
+        {% assign link = site.data.links.socials %}
+        <a href="{{ link.twitter }}" class="btn `-2 p-3 text-light"><h1 class="fa-brands fa-twitter"></h1></a>
+        <a href="{{ link.instagram }}" class="btn `-2 p-3 text-light"><h1 class="fa-brands fa-instagram"></h1></a>
+        <a href="{{ link.linkedin }}" class="btn `-2 p-3 text-light"><h1 class="fa-brands fa-linkedin"></h1></a>
+        <a href="{{ link.github }}" class="btn `-2 p-3 text-light"><h1 class="fa-brands fa-github"></h1></a>
+</div>
